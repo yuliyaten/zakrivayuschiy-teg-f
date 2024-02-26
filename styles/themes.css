@@ -4,3 +4,47 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+ --background-color: #FFFFFF;
+ --color: #000000;
+ --main-font-weight: 400;
+ --title-font-weight: 700;
+ --gradient-color-first: #d3d3d3; 
+ --gradient-color-second: #e7e7e7;
+ --gradient-color-third: #1a1a1a;
+ --background-image: 
+ repeating-linear-gradient(to right, var(--gradient-color-first) 0 2px, transparent 2px 4px),
+ repeating-linear-gradient(var(--gradient-color-first) 0 2px, transparent 2px 4px),
+ linear-gradient(var(--gradient-color-second) 0.01%, var( --gradient-color-third));
+}
+
+:root.theme-dark {
+ --background-color: #000000;
+ --color: #00CC14;
+ --main-font-weight: 465;
+ --title-font-weight: 785;
+ --gradient-color-first: #000; 
+ --gradient-color-second: #007f0c;
+ --gradient-color-third: #004306;
+ --background-image: 
+ repeating-linear-gradient(to right, var(--gradient-color-first) 0 2px, transparent 2px 4px),
+ repeating-linear-gradient(var(--gradient-color-first) 0 2px, transparent 2px 4px),
+ linear-gradient(var(--gradient-color-second), var( --gradient-color-third));
+}
+
+@media (prefers-color-scheme: dark) {
+ :root {
+  --background-color: #000000;
+  --color: #00CC14;
+  --main-font-weight: 465;
+  --title-font-weight: 785;
+  --gradient-color-first: #000; 
+  --gradient-color-second: #007f0c;
+  --gradient-color-third: #004306;
+  --background-image: 
+  repeating-linear-gradient(to right, var(--gradient-color-first) 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(var(--gradient-color-first) 0 2px, transparent 2px 4px),
+  linear-gradient(var(--gradient-color-second), var( --gradient-color-third));
+ }
+}

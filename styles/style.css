@@ -14,7 +14,200 @@
 
 */
 
+@supports (font-variation-settings: normal) {
+  .page {
+    font-variation-settings: 'wdth' var(--main-font-weight);
+  }
+
+  .title_sprint {
+    font-variation-settings: 'wdth' var(--title-font-weight);
+  }
+}
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-variation-settings: 'wdth' var(--main-font-weight);
+  font-family: var(--main-font), sans-serif;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  position: relative;
+}
+
+.header {
+  font-family: var(--accent-font), sans-serif;
+  background-color: var(--background-color);
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  border: 2px solid var(--color);
+  width: var(--width);
+  height: clamp(20.438rem, 3.85vw + 19.535rem, 23rem);
+  text-transform: uppercase;
+  gap: 25px;
+}
+
+.header_title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+}
+
+.header_details {
+  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+}
+
+.logo_group {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__theme-menu {
+  margin-bottom: 25px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  width: 84px;
+  height: 70px;
+
+}
+
+.theme-menu__button {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.theme-menu__button:disabled:before {
+  content: '▶';
+  position: absolute;
+  left: -13px;
+  opacity: 0.6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.info_sprint {
+  border: 2px solid var(--color);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+.title_sprint {
+  margin: 4px 10px 6px;
+  font-weight: var(--title-font-weight);
+  line-height: 21.78px;
+  font-size: 18px;
+}
+
+.text  {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 27px;
+}
+
+.text_sprint  {
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: var( --main-font-weight);
+}
+
+.sprint_img {
+  display: flex;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.sprint_image_watermark {
+  position: relative;
+}
+
+.sprint_watermark {
+  position: absolute;
+  color: var(--color);
+  font-family: var(--accent-font);
+  font-size: 14px;
+  background-blend-mode: hard-light;
+  opacity: 0.5;
+  right: 11px;
+  top: 25px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--background-color);
+}
+
+
+.button_info {
+  display: flex;
+  margin: 0 25px 25px;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card__like-button {
+  background-color: transparent;
+  border: 2px solid var(--color);
+  width: 130px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 12.6px;
+}
+
+.button_box {
+  margin-block-start: 52px;
+  margin-block-end: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button_floppy {
+  width: 28px;
+  height: 28px;
+}
+
+.button_save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: 2px solid var(--color);
+  background-color: var(--background-color);
+  width: clamp(19.125rem, 2.723vw + 18.487rem, 20.938rem);
+  height: clamp(5.25rem, -2.723vw + 5.888rem, 3.438rem);
+
+
 }
