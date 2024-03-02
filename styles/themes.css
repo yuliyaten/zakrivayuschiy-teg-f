@@ -15,7 +15,7 @@
  --gradient-color-third: #1a1a1a;
  --effect-heart-color: #000000;
  --sparks-color: #FF0000;
- --background-image: 
+ --background-image:
  repeating-linear-gradient(to right, var(--gradient-color-first) 0 2px, transparent 2px 4px),
  repeating-linear-gradient(var(--gradient-color-first) 0 2px, transparent 2px 4px),
  linear-gradient(var(--gradient-color-second) 0.01%, var( --gradient-color-third));
@@ -26,12 +26,12 @@
  --color: #00CC14;
  --main-font-weight: 465;
  --title-font-weight: 785;
- --gradient-color-first: #000; 
+ --gradient-color-first: #000;
  --gradient-color-second: #007f0c;
  --gradient-color-third: #004306;
  --effect-heart-color: #FF0000;
  --sparks-color: #FF0000;
- --background-image: 
+ --background-image:
  repeating-linear-gradient(to right, var(--gradient-color-first) 0 2px, transparent 2px 4px),
  repeating-linear-gradient(var(--gradient-color-first) 0 2px, transparent 2px 4px),
  linear-gradient(var(--gradient-color-second), var( --gradient-color-third));
@@ -43,12 +43,12 @@
   --color: #00CC14;
   --main-font-weight: 465;
   --title-font-weight: 785;
-  --gradient-color-first: #000; 
+  --gradient-color-first: #000;
   --gradient-color-second: #007f0c;
   --gradient-color-third: #004306;
   --effect-heart-color: #FF0000;
   --sparks-color: #FF0000;
-  --background-image: 
+  --background-image:
   repeating-linear-gradient(to right, var(--gradient-color-first) 0 2px, transparent 2px 4px),
   repeating-linear-gradient(var(--gradient-color-first) 0 2px, transparent 2px 4px),
   linear-gradient(var(--gradient-color-second), var( --gradient-color-third));
