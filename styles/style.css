@@ -204,6 +204,7 @@
   position: absolute;
   font-family: var(--accent-font);
   background-blend-mode: hard-light;
+  font-variation-settings: 'wght' var(--main-font-weight);
   right: 13px;
   font-size: 14px;
   line-height: 14px;
