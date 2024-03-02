@@ -323,13 +323,6 @@
   margin-bottom: 100px;
 }
 
-.save__text {
-  font-family: var(--accent-font);
-  font-size: 14px;
-  line-height: 12.6px;
-  display: block;
-}
-
 .sparks {
   fill-opacity: 0;
 }
