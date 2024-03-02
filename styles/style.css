@@ -165,6 +165,7 @@
 }
 
 .title_sprint {
+  font-variation-settings: "wdth" var(--main-font-weight);
   padding: 4px 10px 6px;
   font-weight: 785;
   line-height: 21.78px;
