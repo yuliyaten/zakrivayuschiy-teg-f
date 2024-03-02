@@ -404,9 +404,6 @@
 
 dialog[open] {
   width: clamp(21.313rem, 3.738vw + 20.436rem, 22.063rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-block-start: 30px;
   padding-block-end: 30px;
   gap: 30px;
@@ -417,6 +414,14 @@ dialog[open] {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
+}
+
+.dialog_id_contatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .dialog_floppy {
@@ -446,7 +451,7 @@ dialog[open] {
   color: var(--color);
 }
 
-.submit_text {
+.close_button {
   text-transform: uppercase;
   font-family: var(--accent-font);
   font-weight: var(--main-font-weight);
@@ -455,6 +460,7 @@ dialog[open] {
   background-color: transparent;
   border: 2px solid var(--color);
   color: var(--color);
+  cursor: pointer; 
   height: 38px;
   width: clamp(16.063rem, 3.38vw + 15.27rem, 18.313rem);
 }
