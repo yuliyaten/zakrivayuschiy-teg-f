@@ -3,8 +3,8 @@
 :root {
  --main-font: 'Inter-Variable';
  --accent-font: 'PressStart2P-Regular';
- --main-font-weight: 400;
- --title-font-weight: 700;
+ --main-font-weight: 'wght';
+ --title-font-weight: 'wght';
  --background-color: #FFFFFF;
  --color: #000000;
  --sparks-color: #FF0000;
