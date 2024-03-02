@@ -452,6 +452,7 @@ dialog[open] {
 }
 
 .close_button {
+  cursor: pointer;
   text-transform: uppercase;
   font-family: var(--accent-font);
   font-weight: var(--main-font-weight);
@@ -460,7 +461,6 @@ dialog[open] {
   background-color: transparent;
   border: 2px solid var(--color);
   color: var(--color);
-  cursor: pointer; 
   height: 38px;
   width: clamp(16.063rem, 3.38vw + 15.27rem, 18.313rem);
 }
