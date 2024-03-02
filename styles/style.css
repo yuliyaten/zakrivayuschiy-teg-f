@@ -16,11 +16,11 @@
 
 @supports (font-variation-settings: normal) {
   .page {
-    font-variation-settings: "wdth" var(--main-font-weight);
+    font-variation-settings: "wdth" var(--main-font-weight, 400);
   }
 
   .title_sprint {
-    font-variation-settings: "wdth" var(--title-font-weight);
+    font-variation-settings: "wdth" var(--title-font-weight, 700);
   }
 }
 
