@@ -107,7 +107,6 @@
   display: block;
   width: 100%;
   transform: scaleX(0);
-  bottom: 0;
   background-color: var(--color);
   transition: 0.3s ease-out;
   transform-origin: left center;
@@ -135,26 +134,18 @@
 .theme-menu__button:disabled:before {
   content: "▶";
   position: absolute;
+  top: 0px;
   left: -20px;
   opacity: 0.6;
-  animation: moving 0.5s ease-in-out infinite;
+  animation: moving 0.5s ease-in-out infinite alternate;
   transform: scaleX(1);
-}
-
-@keyframes moving {
-  from {
-    left: -20px;
-  }
-  to {
-    left: -16px;
-  }
 }
 
 .content {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  width: clamp(23.188rem, 30.892vw + 15.947rem, 43.75rem);
+  width: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
 }
 
 .info_sprint {
@@ -169,6 +160,7 @@
   padding: 4px 10px 6px;
   line-height: 21.78px;
   font-size: 18px;
+  border-bottom: 2px solid var(--color);
 }
 
 .text {
@@ -176,6 +168,7 @@
   flex-direction: column;
   padding: 25px;
   gap: 27px;
+  border-top: 2px solid var(--color);
 }
 
 .text_sprint {
@@ -189,11 +182,8 @@
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
-  border-bottom: 2px solid var(--color);
-}
-
-.sprint_img_border {
-  border-bottom: 4px solid var(--color);
+  width: clamp(23.188rem, 30.516vw + 16.035rem, 43.5rem);
+  height: clamp(23.188rem, 30.516vw + 16.035rem, 43.5rem);
 }
 
 .sprint_img_watermark {
@@ -298,9 +288,13 @@
     block-size: 21px;
   }
 
-  dialog[open] {
+  .dialog_details[open] {
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  .sprint_watermark {
+    right: 25px;
   }
 }
 
@@ -330,16 +324,6 @@
 
 .like-icon.is-liked .sparks {
   animation: appear 0.3s 0.3s ease-in alternate;
-}
-
-@keyframes appear {
-  from {
-    fill-opacity: 0;
-  }
-
-  to {
-    fill-opacity: 1;
-  }
 }
 
 .like-icon .core {
@@ -392,22 +376,13 @@
   transform-origin: center;
 }
 
-@keyframes resize {
-  from {
-    scale: 1;
-  }
-
-  to {
-    scale: 1.5;
-  }
-}
-
-dialog[open] {
+.dialog_details[open] {
   width: clamp(21.313rem, 3.738vw + 20.436rem, 22.063rem);
   padding-block-start: 30px;
   padding-block-end: 30px;
   gap: 30px;
   background-color: var(--background-color);
+  border: 2px solid var(--color);
 }
 
 .text_image_container {
@@ -422,11 +397,6 @@ dialog[open] {
   align-items: center;
   justify-content: center;
   gap: 30px;
-}
-
-.dialog_floppy {
-  display: flex;
-  justify-content: center;
 }
 
 .disk_text {
@@ -465,7 +435,12 @@ dialog[open] {
   width: clamp(16.063rem, 3.38vw + 15.27rem, 18.313rem);
 }
 
-dialog::backdrop {
+.close_button:hover {
+  background-position: left bottom;
+  color: var(--background-color);
+}
+
+.dialog_details::backdrop {
   background-color: #000000;
   opacity: 75%;
 }
