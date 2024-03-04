@@ -19,7 +19,7 @@
   <body class="page">
     <header class="header">
       <div class="logo_group">
-        <a class="header_title">&lt;/HTML&gt;</a>
+        <div class="header_title">&lt;/HTML&gt;</div>
         <h1 class="header_details">закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
@@ -82,7 +82,7 @@
       <article class="info_sprint">
         <h2 class="title_sprint">1 спринт: Я — чистый лист</h2>
         <div class="sprint_img_watermark">
-          <img class="sprint_img sprint_img_border img_filter_blur" src="./images/car_img.png" alt="Чистый лист">
+          <img class="sprint_img img_filter_blur" src="./images/car_img.png" alt="Чистый лист">
           <span class="sprint_watermark">&lt;/HTML&gt;</span>
         </div>
         <div class="text"> 
@@ -112,7 +112,7 @@
       <article class="info_sprint">
         <h2 class="title_sprint">1 спринт: А если не получится?</h2>
         <div class="sprint_img_watermark">
-          <img class="sprint_img sprint_img_border img_filter_contrast" src="./images/car_img.png" alt="Не получится">
+          <img class="sprint_img img_filter_contrast" src="./images/car_img.png" alt="Не получится">
           <span class="sprint_watermark">&lt;CSS&gt;</span>
         </div>
         <div class="text"> 
@@ -202,7 +202,7 @@
       <article class="info_sprint">
         <h2 class="title_sprint">3 спринт: Обходные стратегии</h2>
         <div class="sprint_img_watermark">
-          <img class="sprint_img sprint_img_border img_filter_invert" src="./images/car_img.png" alt="Стратегии">
+          <img class="sprint_img img_filter_invert" src="./images/car_img.png" alt="Стратегии">
           <span class="sprint_watermark">&lt;support&gt;</span>
         </div>
         <div class="text"> 
@@ -232,7 +232,7 @@
       <article class="info_sprint">
         <h2 class="title_sprint">3 спринт: Когда опускаются руки</h2>
         <div class="sprint_img_watermark">
-          <img class="sprint_img sprint_img_border img_multipile_filter" src="./images/car_img.png" alt="Опускаются руки">
+          <img class="sprint_img img_multipile_filter" src="./images/car_img.png" alt="Опускаются руки">
           <span class="sprint_watermark">&lt;lifes-style: none;&gt;</span>
         </div>
         <div class="text"> 
@@ -262,7 +262,7 @@
       <article class="info_sprint">
         <h2 class="title_sprint">«Сейчас я здесь»</h2>
         <div class="sprint_img_watermark">
-          <img class="sprint_img sprint_img_border img_filter_shadow" src="./images/car_img.png" alt="Здесь">
+          <img class="sprint_img img_filter_opacity" src="./images/car_img.png" alt="Здесь">
           <span class="sprint_watermark">&lt;experience&gt;</span>
         </div>
         <div class="text"> 
@@ -297,19 +297,17 @@
         <span class="save__text">Сохранить на память</span>
       </button>
       <dialog id="dialog_id" class="dialog_details">
-        <div class="dialog_id_contatiner">
-          <div class="text_image_container">
-            <svg class="button_floppy button_floppy_dialog" viewBox="0 0 39 39"> 
-              <use href="./svg/floppy.svg#floppy"></use>
-            </svg>
-            <p class="disk_text">Вставьте дискету, чтобы продолжить</p>
-          </div>
-          <form method="dialog">
-            <button class="button_style close_button">Ok</button>
-          </form>
+        <div class="text_image_container">
+          <svg class="button_floppy button_floppy_dialog" viewBox="0 0 39 39"> 
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <p class="disk_text">Вставьте дискету, чтобы продолжить</p>
         </div>
+        <form method="dialog">
+          <button class="button_style close_button">Ok</button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
-</html>
+  </html>
